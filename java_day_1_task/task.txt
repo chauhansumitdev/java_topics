@@ -1,0 +1,11 @@
+Java : Concurrency , Multithreading	 
+Question	 
+Thread Pool	Producer-Consumer Problem
+Executor Service	 
+Semaphores	 	 	 
+Blocking Queue	 	 	 
+Synchronization	 	 	 
+Priority Queue	 	
+
+semaphores -> count, binary
+provide restrictions to access a shared resource
