@@ -6,7 +6,6 @@ package saturday.TicketBookingSystem;
  */
 public class Global {
    public static int ticket_count = 100;
-   public static int thread_pool_size = 5;
    public static int blocking_queue_size = 5;
 
    public Global() {
