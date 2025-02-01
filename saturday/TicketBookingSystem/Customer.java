@@ -7,7 +7,9 @@ package saturday.TicketBookingSystem;
 public class Customer implements Runnable {
     
     private ServiceRequestQueue serviceRequestQueue;
-    private boolean status = false;
+
+    // changes made by one thread are visible to another thread by using volatile
+    private volatile boolean status = false;
 
     public Customer(ServiceRequestQueue serviceRequestQueue){
         this.serviceRequestQueue = serviceRequestQueue;
@@ -18,9 +20,10 @@ public class Customer implements Runnable {
         serviceRequestQueue.put(create_request());
 
         while (status != true) {
+
         }
 
-        System.out.println(" SYSTEM : THREAD EXIT  "+ this + " \u001B[37m" );
+        System.out.println("\u001B[37m SYSTEM : THREAD EXIT  "+ this + " \u001B[37m" );
     }
 
     public void set_status(){
