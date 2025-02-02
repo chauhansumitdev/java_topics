@@ -58,6 +58,12 @@ public class TicketBookingSystem {
     private void simulation_mode(){
         while(true){
 
+            try{
+                Thread.sleep(200);
+            }catch(Exception e){
+                e.printStackTrace();
+            }
+
             new Thread(new Customer(serviceRequestQueue)).start();
 
         }

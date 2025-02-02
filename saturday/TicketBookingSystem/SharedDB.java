@@ -34,15 +34,15 @@ public class SharedDB {
             synchronized(this){
                 if(ticket_customer[ticket_number] == null){
                     ticket_customer[ticket_number] = customer;
+                    remaining_ticket--;
                     try{
                         Thread.sleep(200);
                     }catch(Exception e){
                         e.printStackTrace();
                     }
-                    print("\u001B[32m DB : TICKET BOOKED "+ customer+" "+ticket_number+"\u001B[32m");
+                    print("\u001B[32m DB : TICKET BOOKED "+ customer+" "+ticket_number+" REMAINING TICKETS " + remaining_ticket +"\u001B[32m");
                     
                     request.get_customer().set_status();
-                    System.out.println(request.get_customer().get_status());
                 }else{
                     System.out.println("\u001B[31m DB : ERROR PROCESSING REQUEST, TRY AGAIN \u001B[31m");
                 }

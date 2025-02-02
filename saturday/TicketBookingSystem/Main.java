@@ -7,9 +7,9 @@ public class Main {
         TicketBookingSystem ticketBookingSystem = new TicketBookingSystem();
 
         //manual mode
-        ticketBookingSystem.add_customer();
-        ticketBookingSystem.add_customer();
-        ticketBookingSystem.add_customer();
+        // ticketBookingSystem.add_customer();
+        // ticketBookingSystem.add_customer();
+        // ticketBookingSystem.add_customer();
 
         // automatic mode
         ticketBookingSystem.start_system();
