@@ -38,6 +38,8 @@ S.no	Question	 	Reference
 ![Screenshot 2025-02-03 082351](https://github.com/user-attachments/assets/c85e7d90-ef6c-4b92-ab55-42341743d5fe)
 
 - ER Diagram Food Delivery Application
+![ER](./saturday/ERDiagram/ER_Food_Delivery_App.png)
+
 
 ## 3 Feb
 DB design review and
